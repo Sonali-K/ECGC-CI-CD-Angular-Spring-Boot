@@ -1,0 +1,65 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div style="text-align: center">
+    <h1>{{message}}</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <fieldset>
+                    <legend class="text-center">Valid information is required to register. <span class="req"><small>
+                                required *</small></span></legend>
+
+                    <div class="form-group">
+                        <label for="bankBranchCode"><span class="req">* </span> bankBranchCode: <small>This will be your login user
+                            bankBranchCode</small> </label>
+                            <!-- Here user is object reference-->
+                        <input required type="NUMBER" [(ngModel)]="user.bankBranchCode" name="bankBranchCode" id="bankBranchCode"
+                            class="form-control phone" maxlength="28" placeholder="Enter your bankBranchCode..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ifscCode"><span class="req">* </span> ifscCode: </label>
+                        <input class="form-control" type="NUMBER" [(ngModel)]="user.ifscCode" name="ifscCode" id="txt" required
+                            placeholder="Enter valid ifscCode" />
+                        <!--<div id="errFirst"></div>-->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bankBranchName"><span class="req">* </span> bankBranchName : </label>
+                        <input class="form-control" type="text" [(ngModel)]="user.bankBranchName" name="bankBranchName" id="txt"
+                            placeholder="Enter bankBranchName" required />
+                        
+                        <!--<div id="errLast"></div>-->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bankBranchCity"><span class="req">* </span> bankBranchCity: </label>
+                        <input class="form-control" required type="text" [(ngModel)]="user.bankBranchCity" name="bankBranchCity"
+                            id="bankBranchCity" placeholder="bankBranchCity" />
+                        
+                        <!--<div class="status" id="status"></div>-->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state"><span class="req">* </span> state: </label>
+                        <input class="form-control" required type="text" [(ngModel)]="user.state" name="state"
+                            id="state" placeholder="state" />
+                       <!-- <div class="status" id="status"></div>-->
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="enterBankDataNow()">
+                    </div>
+                </fieldset>
+            </form><!-- ends register form -->
+            <!-- second for to fiter user-->
+        </div><!-- ends col-6 -->
+
+    </div>
+</div>
+
