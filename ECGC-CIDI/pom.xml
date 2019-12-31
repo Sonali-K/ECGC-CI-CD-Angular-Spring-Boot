@@ -85,7 +85,7 @@
                 <configuration>
                     <nodeVersion>v9.11.2</nodeVersion>
                     <installDirectory>target</installDirectory>
-                    <workingDirectory>${ECGC-CI-CD-Angular-Spring-Boot/user-ecgc-client/package.json}</workingDirectory>
+                    <workingDirectory>ECGC-CI-CD-Angular-Spring-Boot/user-ecgc-client/package.json</workingDirectory>
                 </configuration>
                 <executions>
                     <execution>
