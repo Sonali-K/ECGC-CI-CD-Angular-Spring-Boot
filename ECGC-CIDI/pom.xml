@@ -113,16 +113,16 @@ install
                             <arguments>build</arguments>
                         </configuration>
                     </execution>
-                  <execution>
-                        <id>test</id>
+                  <!--  <execution>
+                        <id>npm-test</id>
                         <goals>
                             <goal>npm</goal>
                         </goals>
                         <configuration>
-                            <arguments>run e2e</arguments>
+                            <arguments>run-script e2e</arguments>
                         </configuration>
                         <phase>test</phase>
-                    </execution>
+                    </execution> -->
                 </executions>
         </plugin>
 			
