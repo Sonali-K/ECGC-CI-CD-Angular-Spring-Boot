@@ -11,6 +11,8 @@
 	<groupId>com.cdac.ecgc</groupId>
 	<artifactId>ECGC-CIDI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+
 	<name>ECGC-CIDI</name>
 	<description>Demo project for Spring Boot</description>
 
