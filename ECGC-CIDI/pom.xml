@@ -84,10 +84,14 @@
                 <version>1.6</version>
                 <configuration>
                     <nodeVersion>v9.11.2</nodeVersion>
+<npmVersion>3.8.6</npmVersion>
+                    <installDirectory>target</installDirectory>
+                    <workingDirectory>${basedir}</workingDirectory>
+
                 </configuration>
                 <executions>
                     <execution>
-                        <id>install-npm</id>
+                        <id>install-node-and-npm</id>
                         <goals>
                             <goal>install-node-and-npm</goal>
                         </goals>
