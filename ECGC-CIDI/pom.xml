@@ -85,7 +85,7 @@
                 <configuration>
                     <nodeVersion>v9.11.2</nodeVersion>
                     <installDirectory>target</installDirectory>
-                    <workingDirectory>user-ecgc-client/package.json</workingDirectory>
+                    <workingDirectory>../user-ecgc-client/package.json</workingDirectory>
                 </configuration>
                 <executions>
                     <execution>
