@@ -125,7 +125,12 @@ install
                     </execution> -->
                 </executions>
         </plugin>
-			
+		 <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>ECGC-CIDI/pom.xml</webXml>
+                </configuration>
+            </plugin>	
 		</plugins>
 	</build>
 
