@@ -99,6 +99,10 @@
                         <goals>
                             <goal>npm</goal>
                         </goals>
+
+<configuration>
+install
+</configuration>
                     </execution>
                     <execution>
                         <id>npm-build</id>
@@ -106,7 +110,7 @@
                             <goal>npm</goal>
                         </goals>
                         <configuration>
-                            <arguments>run-script build</arguments>
+                            <arguments>npm build</arguments>
                         </configuration>
                     </execution>
                     <execution>
